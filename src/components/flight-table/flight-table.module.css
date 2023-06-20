@@ -1,0 +1,115 @@
+.tableContainer {
+    display: flex;
+    justify-content: stretch;
+    align-items: left;
+    flex-direction: column;
+    padding: 0px;
+    width: 100%;
+}
+
+table {
+    border-spacing: 0px;
+}
+
+.oddRow {
+    background-color: var(--odd-rows-background-color);
+}
+
+.evenRow {
+    background-color: var(--even-rows-background-color);
+}
+
+.logo {
+    width: 100%
+}
+
+.early {
+    background-color: #39AE39;
+}
+
+.late {
+    background-color: red;
+}
+
+.delayed {
+    background-color: orange;
+}
+
+th {
+    text-align: center;
+    background-color: var(--header-background-color);
+    color: var(--header-font-color);
+    padding-top: 20px;
+}
+
+td {
+    vertical-align: middle;
+    color: var(--flight-data-font-color);
+    text-align: center;
+}
+
+.headerRow {
+    padding: 20px;
+}
+
+@media screen and (max-width: 399px) {
+    th {
+        padding: 0px 2px 1px;
+        font-size: 10px;
+    }
+
+    td {
+        padding: 2px 4px;
+        font-size: 10px;
+    }
+    .dateCell {
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 799px) {
+    th {
+        padding: 0px 2px 1px;
+        font-size: 12px;
+    }
+    td {
+        padding: 4px 4px;
+        font-size: 12px;
+    }
+    .dateCell {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1079px) {
+    th {
+        padding: 0px 4px 3px;
+        font-size: 16px;
+    }
+    td {
+        padding: 8px 8px;
+        font-size: 16px;
+    }
+    .dateCell {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    th {
+        padding: 0px 4px 3px;
+        font-size: 1.4vw;
+    }
+    td {
+        padding: 8px 8px;
+        font-size: 1.3vw;
+    }
+    .dateCell {
+        text-align: center;
+        font-size: 1.5vw;
+    }
+}
+

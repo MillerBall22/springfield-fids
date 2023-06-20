@@ -1,0 +1,6 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    background-image: var(--footer-background-color);
+    color: var(--footer-font-color);
+}
